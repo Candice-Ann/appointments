@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-const ObjectId = require('mongodb').ObjectId;
+const ObjectID = require('mongodb').ObjectId;
 
 router.get('/appointments', (req, res, next) => {
   req.collection.find({})
@@ -27,8 +27,8 @@ router.delete('/appointments/:id', (req, res, next) => {
   const { id } = req.params;
   const _id = ObjectID(id);
 
-  req.collection.deleteOne({_id})
-    .then(result => res.json(result))
+  req.collection.deleteOne({_id}) 
+    .then(result => res.json(result)) //setting result
     .catch(error => res.send(error));
 })
 
