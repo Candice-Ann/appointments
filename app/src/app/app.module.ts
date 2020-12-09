@@ -15,10 +15,16 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatDatepickerModule } from '@angular/material/datepicker';  
 import { MatNativeDateModule } from '@angular/material/core';  
 import { MatToolbarModule } from '@angular/material/toolbar';  
+import { AppointmentComponent } from './appointment/appointment.component';
+import { AppointmentListComponent } from './appointment-list/appointment-list.component';
+import { HomeComponent } from './home/home.component';
   
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent, 
+    AppointmentComponent,
+    AppointmentListComponent
   ],
   imports: [
     BrowserModule,
