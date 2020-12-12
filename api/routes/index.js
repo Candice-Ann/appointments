@@ -1,3 +1,4 @@
+
 var express = require('express');
 var router = express.Router();
 const ObjectID = require('mongodb').ObjectId;
@@ -33,7 +34,6 @@ router.delete('/appointments/:id', (req, res, next) => {
 })
 
 module.exports = router;
-
 
 /* GET home page. 
 router.get('/', function(req, res, next) {
